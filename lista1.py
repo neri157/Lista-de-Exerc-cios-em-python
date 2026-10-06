@@ -1,24 +1,23 @@
-#primeira questão
+#primeira questao#
+f = float(input("temperatura em fahrenheit: "))
+c = (f - 32) * 5 / 9 #* multiplicacao / divisao
+print(f"{f}°F = {c:.2f}°C") 
 
-fahrenheit = float(input('digite a temperatura'))
-celsius = (fahrenheit - 32) * 5 / 9
-print ('temperatura em celsius', celsius)
 
-#segunda questão
+#segunda questao#
+total_pares = 58
+caixa = total_pares // 12  #divisao inteira
+sobra = total_pares % 12  #resto da divisao
+print(f"total de pares: {total_pares}") 
+print(f"caixas cheias: {caixa}")
+print(f"pares restantes: {sobra}")
 
-total_pares = int(input('digite a quantidade de pares'))
+#tercerira questao#
 
-caixas = total_pares // 12
-sobra = total_pares % 12
+x = float(input("digite um numero:")) #float responsavel por numeros decimais 
+y = float(input("digite um numero:")) #input para o usuario digitar algo 
+z = float(input("digite um numero:")) 
 
-print(f"caixas completas", caixas)
-print(f"pares que sobraram", sobra)
+conta = (x + y) ** 2 / (x - z) #** pra fazer a elevaçao/ dividir/ () para fazer a prioridade da conta
 
-#terceira questão
-x = float(input ('digite o valor de x'))
-y = float(input ('digite o valor de y'))
-z = float(input ('digite o valor de z'))
-
-resultado = ((x + y) ** 2) // (x - z)
-
-print("resultado =", resultado)
+print(f"resultado: {conta:.2f}") #f para formatar a saida do resultado/ .2f para limitar a 2 casas decimais
